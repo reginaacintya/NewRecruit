@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etId;
     RadioButton rbV, rbM, rbI;
     CheckBox cbWater, cbFire, cbGround, cbFly, cbGhost, cbDragon, cbGrass, cbBug, cbSteel;
+    Spinner spReg;
     Button bOk;
     TextView tvResult;
 
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         cbGrass   =   (CheckBox) findViewById(R.id.checkBoxGrass);
         cbSteel   =   (CheckBox) findViewById(R.id.checkBoxSteel);
         cbWater   =   (CheckBox) findViewById(R.id.checkBoxWater);
+        spReg   =   (Spinner) findViewById(R.id.spinnerRegion);
         bOk =   (Button) findViewById(R.id.buttonOk);
         tvResult = (TextView) findViewById(R.id.textViewResult);
 
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     tvResult.setText("You haven't fill the form completely");
                 }
                 else {
-                    tvResult.setText("You joined with us!, your info :" + "\nYour name is " + name + " with ID number " + id + "." + "\nYou are from team " + gym + " in " + "\n" + type);
+                    tvResult.setText("You joined with us!, your info :" + "\nYour name is " + name + " with ID number " + id + "." + "\nYou are from team " + gym + " in " + spReg.getSelectedItem().toString() + "\n" + type);
                 }
             }
         });
