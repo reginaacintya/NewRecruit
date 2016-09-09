@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl1033.newrecruit.MainActivity">
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Go Join the New World"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your adventure starts here!"
+        android:id="@+id/textView3"
+        android:background="#ff0202"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/editName"
+        android:layout_alignEnd="@+id/editName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editId"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Region"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/editId"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerRegion"
+        android:entries="@array/region"
+        android:background="#f1eeee"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gym"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/spinnerRegion"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pokemon Type"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView6"
+        android:id="@+id/radioGroup"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor"
+            android:id="@+id/radioButtonV"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mystic"
+            android:id="@+id/radioButtonM"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instinct"
+            android:id="@+id/radioButtonI"
+            android:checked="false" />
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dragon"
+        android:id="@+id/checkBoxDragon"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fire"
+        android:id="@+id/checkBoxFire"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBoxGhost"
+        android:layout_toRightOf="@+id/checkBoxGround"
+        android:layout_toEndOf="@+id/checkBoxGround" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fly"
+        android:id="@+id/checkBoxFly"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxFire"
+        android:layout_alignLeft="@+id/checkBoxFire"
+        android:layout_alignStart="@+id/checkBoxFire" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ground"
+        android:id="@+id/checkBoxGround"
+        android:checked="false"
+        android:layout_above="@+id/checkBoxFire"
+        android:layout_alignLeft="@+id/checkBoxGhost"
+        android:layout_alignStart="@+id/checkBoxGhost" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghost"
+        android:id="@+id/checkBoxGhost"
+        android:checked="false"
+        android:layout_above="@+id/checkBoxWater"
+        android:layout_alignLeft="@+id/checkBoxGrass"
+        android:layout_alignStart="@+id/checkBoxGrass" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grass"
+        android:id="@+id/checkBoxGrass"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxGhost"
+        android:layout_toRightOf="@+id/checkBoxDragon"
+        android:layout_toEndOf="@+id/checkBoxDragon" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bug"
+        android:id="@+id/checkBoxBug"
+        android:checked="false"
+        android:layout_above="@+id/checkBoxFire"
+        android:layout_toRightOf="@+id/checkBoxGround"
+        android:layout_toEndOf="@+id/checkBoxGround" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steel"
+        android:id="@+id/checkBoxSteel"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxDragon"
+        android:layout_alignLeft="@+id/checkBoxDragon"
+        android:layout_alignStart="@+id/checkBoxDragon" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water"
+        android:id="@+id/checkBoxWater"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxSteel"
+        android:layout_alignLeft="@+id/buttonOk"
+        android:layout_alignStart="@+id/buttonOk" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK!"
+        android:id="@+id/buttonOk"
+        android:textColor="#ffffff"
+        android:background="#f90000"
+        android:layout_below="@+id/checkBoxGrass"
+        android:layout_alignLeft="@+id/checkBoxSteel"
+        android:layout_alignStart="@+id/checkBoxSteel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result"
+        android:id="@+id/textView"
+        android:layout_below="@+id/buttonOk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your result"
+        android:id="@+id/textViewResult"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAINER RECRUIT!"
+        android:id="@+id/textView9"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#fb0000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+</ScrollView>

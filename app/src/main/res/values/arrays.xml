@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="region">
+        <item>Asia</item>
+        <item>Africa</item>
+        <item>Australia</item>
+        <item>America</item>
+        <item>Antartica</item>
+        <item>Europe</item>
+    </string-array>
+</resources>
+
